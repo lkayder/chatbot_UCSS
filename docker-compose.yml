@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  bot-ucss:
+    build: .
+    container_name: bot_transparencia
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    environment:
+      # Aquí pondremos tu API KEY de Google (Gemini) o OpenAI más adelante
+      - GOOGLE_API_KEY=tu_api_key_aqui
